@@ -1,0 +1,106 @@
+
+/* CSS CODE */
+/* Global styles */
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title styling */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+}
+
+/* Mode selection buttons */
+.mode-selection {
+    margin: 20px 0;
+}
+
+.mode-selection button {
+    background: linear-gradient(45deg, #00eaff, #0088ff);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 234, 255, 0.8);
+}
+
+.mode-selection button:hover {
+    background: linear-gradient(45deg, #0088ff, #00eaff);
+    box-shadow: 0 0 15px rgba(0, 234, 255, 1);
+}
+
+/* Game board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 8px;
+    margin: 20px auto;
+    width: 380px;
+}
+
+/* Cells styling */
+.cell {
+    width: 120px;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid #00eaff;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 120px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #ffffff;
+    text-shadow: 0 0 8px #ffffff;
+}
+
+.cell:hover {
+    background: rgba(0, 234, 255, 0.2);
+    box-shadow: 0 0 10px #00eaff;
+}
+
+.cell.taken {
+    cursor: not-allowed;
+}
+
+/* Winning message */
+#statusMessage {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #00ff88;
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+}
+
+/* Restart button */
+#restartButton {
+    background: linear-gradient(45deg, #ff0099, #ff6600);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: -10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255, 0, 153, 0.8);
+}
+
+#restartButton:hover {
+    background: linear-gradient(45deg, #ff6600, #ff0099);
+    box-shadow: 0 0 15px rgba(255, 0, 153, 1);
+}
